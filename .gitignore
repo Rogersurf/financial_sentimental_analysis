@@ -12,9 +12,16 @@ __pycache__/
 # vector db
 data/chroma_db/
 
+data/*
+!data/news.db
+
 # models
 *.bin
 *.pt
 
 # outputs
-outputs/
+outputs/*
+!outputs/run_summary.json
+
+# DO_NOT_UPLOAD
+DO_NOT_UPLOAD/*
