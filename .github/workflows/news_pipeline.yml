@@ -73,6 +73,8 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "Update pipeline data and dashboard"
-            git pull --rebase origin main
-            git push origin main
+            git fetch origin
+            git rebase origin/main
+
+            git push origin HEAD:main
           fi
